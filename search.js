@@ -37,4 +37,8 @@ searchInput.addEventListener('keyup', function(){
     for(let i = 0;i < filteredArray.length;i++){
         ulsearch.innerHTML += `<li>${filteredArray[i]}</li>`;
     }
+    if (searchValue === '') {
+        ulsearch.innerHTML = '';
+        return;
+    }
 })
